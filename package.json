@@ -1,7 +1,7 @@
 {
-  "name": "weather-react",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "Weather app using reactJS",
+  "description": "React boilerplate",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Flopet17/weather-react.git"
+    "url": "git+https://github.com/Flopet17/react-boilerplate.git"
   },
   "keywords": [
     "reactjs",
@@ -21,9 +21,9 @@
   "author": "Florin Pop",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Flopet17/weather-react/issues"
+    "url": "https://github.com/Flopet17/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/Flopet17/weather-react#readme",
+  "homepage": "https://github.com/Flopet17/react-boilerplate#readme",
   "dependencies": {
     "axios": "^0.15.3",
     "express": "^4.14.0",
