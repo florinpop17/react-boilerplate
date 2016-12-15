@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Flopet17/react-tutorials.git"
+    "url": "git+https://github.com/Flopet17/react-boilerplate.git"
   },
   "keywords": [
     "reactjs",
@@ -20,9 +20,9 @@
   "author": "Florin Pop",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Flopet17/react-tutorials/issues"
+    "url": "https://github.com/Flopet17/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/Flopet17/react-tutorials#readme",
+  "homepage": "https://github.com/Flopet17/react-boilerplate#readme",
   "dependencies": {
     "express": "^4.14.0",
     "react": "^15.4.1",

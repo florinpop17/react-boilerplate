@@ -48,11 +48,12 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
-	var Greeter = __webpack_require__(178);
 
-	var myName = "Florin";
-
-	ReactDOM.render(React.createElement(Greeter, { name: myName }), document.getElementById("react-container"));
+	ReactDOM.render(React.createElement(
+	  'h1',
+	  null,
+	  'Welcome to my react boilerplate!'
+	), document.getElementById("react-container"));
 
 /***/ },
 /* 1 */
@@ -21460,142 +21461,6 @@
 
 	module.exports = ReactDOMInvalidARIAHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(1);
-	var GreeterMessage = __webpack_require__(179);
-	var GreeterForm = __webpack_require__(180);
-
-	var Greeter = React.createClass({
-	    displayName: 'Greeter',
-
-	    getDefaultProps: function getDefaultProps() {
-	        return {
-	            name: 'React',
-	            message: 'This is the default message!'
-	        };
-	    },
-	    getInitialState: function getInitialState() {
-	        return {
-	            name: this.props.name,
-	            message: this.props.message
-	        };
-	    },
-	    handleNewData: function handleNewData(updates) {
-	        this.setState(updates);
-	    },
-	    render: function render() {
-	        var name = this.state.name;
-	        var message = this.state.message;
-
-	        return React.createElement(
-	            'div',
-	            null,
-	            React.createElement(GreeterMessage, { name: name, message: message }),
-	            React.createElement(GreeterForm, { onNewData: this.handleNewData })
-	        );
-	    }
-	});
-
-	module.exports = Greeter;
-
-/***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var React = __webpack_require__(1);
-
-	var GreeterMessage = React.createClass({
-	    displayName: "GreeterMessage",
-
-	    render: function render() {
-	        var name = this.props.name;
-	        var message = this.props.message;
-
-	        return React.createElement(
-	            "div",
-	            { id: "message" },
-	            React.createElement(
-	                "h2",
-	                null,
-	                "Hello ",
-	                name,
-	                "!"
-	            ),
-	            React.createElement(
-	                "p",
-	                null,
-	                "Your message: ",
-	                React.createElement(
-	                    "span",
-	                    null,
-	                    message
-	                )
-	            )
-	        );
-	    }
-	});
-
-	module.exports = GreeterMessage;
-
-/***/ },
-/* 180 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var React = __webpack_require__(1);
-
-	var GreeterForm = React.createClass({
-	    displayName: "GreeterForm",
-
-	    changeInput: function changeInput() {
-	        var updates = {};
-	        var name = this.refs.name.value;
-	        var message = this.refs.message.value;
-
-	        updates = { name: name, message: message };
-
-	        this.props.onNewData(updates);
-	    },
-	    render: function render() {
-	        return React.createElement(
-	            "form",
-	            null,
-	            React.createElement(
-	                "div",
-	                null,
-	                React.createElement(
-	                    "label",
-	                    null,
-	                    "Name:"
-	                ),
-	                React.createElement("br", null),
-	                React.createElement("input", { onChange: this.changeInput, type: "text", ref: "name", placeholder: "Enter name" })
-	            ),
-	            React.createElement(
-	                "div",
-	                null,
-	                React.createElement(
-	                    "label",
-	                    null,
-	                    "Message:"
-	                ),
-	                React.createElement("br", null),
-	                React.createElement("textarea", { onChange: this.changeInput, ref: "message", placeholder: "Enter message" })
-	            )
-	        );
-	    }
-	});
-
-	module.exports = GreeterForm;
 
 /***/ }
 /******/ ]);
