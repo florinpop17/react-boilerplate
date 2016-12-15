@@ -1,7 +1,7 @@
 {
-  "name": "react-tutorials",
-  "version": "0.0.1",
-  "description": "Learning react",
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Simple boilerplate for react.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
