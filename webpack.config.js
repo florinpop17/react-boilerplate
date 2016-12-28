@@ -10,6 +10,10 @@ module.exports = {
     },
     resolve: {
         root: __dirname,
+        modulesDirectories: [
+            'node_modules',
+            './app/components',
+        ],
         alias: {
             Main: 'app/components/Main.jsx',
             applicationStyles: 'app/styles/app.css'
