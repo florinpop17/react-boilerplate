@@ -10,4 +10,4 @@ class Main extends React.Component{
     }
 }
 
-default export Main;
+export default Main;
